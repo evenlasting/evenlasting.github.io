@@ -1,0 +1,41 @@
+#header[data-v-7253de] {
+  position: absolute;
+  width: 1536px;
+  height: 70px;
+  left: -15px;
+  top: -4px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=Header.vue.map */
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.content {
+  text-align: center;
+}
+h1 {
+  font-weight: 300;
+}
+h2 {
+  font-weight: 500;
+}
+a {
+  color: #42b983;
+}
+
+/*# sourceMappingURL=App.vue.map */
+/*# sourceMappingURL=index.6477afbb.css.map */
