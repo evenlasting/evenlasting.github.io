@@ -32,11 +32,17 @@ let time0=new Date().getTime();
 form.addEventListener('submit',(ev)=>{
     ev.preventDefault();
     const time=window.tt-time0;
+    const atime=new Date().getTime()-window.tt;
     console.log(`type=${window.type}&t=${time}&${form.urldata}`);
-    axios.get(`http://49.235.219.243:5555/us/?type=${window.type}&t=${time}&${form.urldata}`).then(res=>{
+    try {
+        axios.get(`http://49.235.219.243:5555/us/?type=${window.type}&t=${time}&at=${atime}&${form.urldata}`).then(res=>{
         if (res.data==='finish') document.querySelector('#finish').setAttribute('style','');
         else document.querySelector('#nofinish').setAttribute('style','');
     })
+    } catch (error) {
+        document.querySelector('#nofinish').setAttribute('style','');
+    }
+    
 
 })
 
