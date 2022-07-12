@@ -1,0 +1,118 @@
+#narration {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 150px 0 150px;
+  position: relative;
+  z-index: 20;
+}
+#narration div {
+  background: rgba(249, 249, 249, 0.9);
+  padding: 0 10px 0 10px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+}
+#narration .sections {
+  margin-top: 515px;
+}
+#narration #intro {
+  margin-top: 0;
+  background: rgba(249, 249, 249, 0.3);
+}
+#narration #intro p {
+  background: rgba(249, 249, 249, 0.6);
+}
+#narration .headline {
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: "AdelleSans-Bold", Helvetica, Arial, sans-serif;
+  font-size: 65px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 75px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+#narration .headline .byline {
+  font-size: 16px;
+}
+/* #narration > div {
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    border: none;
+  } */
+#narration > div {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  border: 1px solid #333;
+}
+
+.all-drugs,
+.class-drugs,
+.legend-sqs {
+  stroke: #fff;
+  stroke-width: 0;
+  fill: #168dd9;
+}
+
+#chart {
+  max-width: 940px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+}
+.blue-txt {
+    font-family: 'AdelleSans-Regular', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    color: #168dd9;
+  }
+  .gray-txt {
+    font-family: 'AdelleSans-Regular', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    color: #999;
+  }
+  .purp-txt {
+    font-family: 'AdelleSans-Regular', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    color: #d365ba;
+  }
+  .bold-txt {
+    font-family: 'AdelleSans-Bold', Helvetica, Arial, sans-serif;
+    color: #000;
+  }
+.timeline-annos {
+    stroke-width: 1px;
+    stroke: #666;
+  }
+
+.axis path,
+.axis line,
+.timeline-line {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.axis .domain {
+  stroke: none;
+}
+.axis text,
+.timeline-labels {
+  font-family: 'AdelleSans-Bold', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  fill: #666;
+}
+.year-group-labels {
+  font-family: 'AdelleSans-Bold', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  fill: #666;
+}
