@@ -38,7 +38,9 @@ form.addEventListener('submit',(ev)=>{
         axios.get(`http://49.235.219.243:5555/us/?type=${window.type}&t=${time}&at=${atime}&${form.urldata}`).then(res=>{
         if (res.data==='finish') document.querySelector('#finish').setAttribute('style','');
         else document.querySelector('#nofinish').setAttribute('style','');
-    })
+    }).catch(function (error) {
+    document.querySelector('#nofinish').setAttribute('style','');
+  })
     } catch (error) {
         document.querySelector('#nofinish').setAttribute('style','');
     }
