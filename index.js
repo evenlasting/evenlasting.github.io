@@ -39,11 +39,11 @@ form.addEventListener('submit',(ev)=>{
         if (res.data==='finish') document.querySelector('#finish').setAttribute('style','');
         else document.querySelector('#nofinish').setAttribute('style','');
     }).catch(function (error) {
-    document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}到98的帖子中。我们会按其中的信息发放奖励。</b>`
+    document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}回复到98的帖子中。我们会按其中的信息发放奖励。</b>`
         document.querySelector('#nofinish').setAttribute('style','');
   })
     } catch (error) {
-        document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}到98的帖子中。我们会按其中的信息发放奖励。</b>`
+        document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}回复到98的帖子中。我们会按其中的信息发放奖励。</b>`
         document.querySelector('#nofinish').setAttribute('style','');
     }
     
