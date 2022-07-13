@@ -33,15 +33,17 @@ form.addEventListener('submit',(ev)=>{
     ev.preventDefault();
     const time=window.tt-time0;
     const atime=new Date().getTime()-window.tt;
-    console.log(`type=${window.type}&t=${time}&${form.urldata}`);
+    console.log(`请复制这里：type=${window.type}&t=${time}&at=${atime}&${form.urldata}`);
     try {
         axios.get(`http://49.235.219.243:5555/us/?type=${window.type}&t=${time}&at=${atime}&${form.urldata}`,{timeout:1500}).then(res=>{
         if (res.data==='finish') document.querySelector('#finish').setAttribute('style','');
         else document.querySelector('#nofinish').setAttribute('style','');
     }).catch(function (error) {
-    document.querySelector('#nofinish').setAttribute('style','');
+    document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}到98的帖子中。我们会按其中的信息发放奖励。</b>`
+        document.querySelector('#nofinish').setAttribute('style','');
   })
     } catch (error) {
+        document.querySelector('#nofinish').innerHTML=`<b>由于网络原因提交失败，请复制此内容{type=${window.type}&t=${time}&at=${atime}&${form.urldata}}到98的帖子中。我们会按其中的信息发放奖励。</b>`
         document.querySelector('#nofinish').setAttribute('style','');
     }
     
